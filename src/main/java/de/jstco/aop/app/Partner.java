@@ -1,0 +1,19 @@
+package de.jstco.aop.app;
+
+import de.jstco.aop.infrastructure.Timed;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Partner {
+
+    @Timed
+    public String doStuff(String input) {
+        return "Hello " + input;
+    }
+
+    @Timed
+    public String throwStuff(String input) {
+        throw new RuntimeException("example");
+    }
+
+}
