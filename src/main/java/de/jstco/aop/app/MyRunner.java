@@ -15,13 +15,11 @@ public class MyRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         try {
-            System.out.println(partner.doStuff("world!"));
-            System.out.println();
+            partner.doStuff("world!");
             System.out.println("--------------------------------------------");
-            System.out.println();
             partner.throwStuff("boom");
         } catch (Exception e) {
-            // ignore
+            System.err.println("Error detected. kthxbye.");
         }
     }
 

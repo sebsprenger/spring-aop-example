@@ -8,6 +8,7 @@ public class Partner {
 
     @Timed
     public String doStuff(String input) {
+        System.out.println("[inside ] input=" + input);
         return "Hello " + input;
     }
 
