@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>de.jstco</groupId>
-	<artifactId>aop</artifactId>
+	<artifactId>spring-aop-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>aop</name>
+	<name>spring-aop-example</name>
 	<description>AOP Demo project for Spring Boot</description>
 
 	<properties>
