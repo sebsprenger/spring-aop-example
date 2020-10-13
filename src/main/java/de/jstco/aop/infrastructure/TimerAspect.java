@@ -20,13 +20,13 @@ public class TimerAspect {
         System.out.println("[around ] >> stuff before " + joinPoint.getSignature());
         long start = System.currentTimeMillis();
 
-        Object proceed = joinPoint.proceed();
+        Object result = joinPoint.proceed();
 
         long executionTime = System.currentTimeMillis() - start;
         metrics.push("timing", executionTime);
         System.out.println("[around ] >> stuff after");
 
-        return proceed;
+        return result;
     }
 
     @Before("@annotation(Timed)")
