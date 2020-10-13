@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class TimerAspect {
 
-    private MetricPublisher metrics;
+    private final MetricPublisher metrics;
 
     public TimerAspect(MetricPublisher metrics) {
         this.metrics = metrics;
